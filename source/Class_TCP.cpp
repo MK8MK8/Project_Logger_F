@@ -21,12 +21,13 @@ void TCP::Error() {
    try {
 	 
    client_socket << "\033[1;31m ERROR \033[0m\n";
-   client_socket >> reply;
+   
+   //client_socket >> reply;
 	   }
       
    catch ( SocketException& ) {}
 
-   std::cout << "We received this response from the server:\n\"" << reply << "\"\n";
+   //std::cout << "We received this response from the server:\n\"" << reply << "\"\n";
 
        }
   
@@ -51,13 +52,13 @@ void TCP::Warning() {
 
    try {
 	 
-   client_socket << "\033[1;31m WARNING \033[0m\n";
-   client_socket >> reply;
+   client_socket << "\033[1;33m WARNING \033[0m\n";
+   //client_socket >> reply;
 	   }
       
    catch ( SocketException& ) {}
 
-   std::cout << "We received this response from the server:\n\"" << reply << "\"\n";
+   //std::cout << "We received this response from the server:\n\"" << reply << "\"\n";
 
        }
   
@@ -84,13 +85,13 @@ void TCP::Verbosity() {
 
    try {
 	 
-   client_socket << "\033[1;31m VERBOSITY \033[0m\n";
-   client_socket >> reply;
+   client_socket << "\033[1;32m VERBOSITY \033[0m\n";
+   //client_socket >> reply;
 	   }
       
    catch ( SocketException& ) {}
 
-   std::cout << "We received this response from the server:\n\"" << reply << "\"\n";
+   //std::cout << "We received this response from the server:\n\"" << reply << "\"\n";
 
        }
   
