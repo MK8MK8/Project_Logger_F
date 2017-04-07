@@ -2,7 +2,7 @@
                                                # Makefile for the Logger programming example #
 
 
-main_objects = source/Class_Console.o source/Class_Log.o source/Class_File.o source/Class_TCP.o source/ClientSocket.o source/ServerSocket.o source/Socket.o main.o
+main_objects = source/Class_Console.o source/Class_Log.o source/Class_File.o source/Class_TCP.o source/ClientSocket.o source/ServerSocket.o source/Socket.o source/CurrentDateTime.o main.o
 
 all : main 
 

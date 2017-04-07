@@ -7,6 +7,7 @@
 #include "../headers/Class_TCP.hpp"
 #include "../headers/ClientSocket.h"
 #include "../headers/SocketException.h"
+#include "../headers/CurrentDateTime.hpp"
 
 using namespace std;
 
@@ -24,7 +25,7 @@ void TCP::Error() {
 
    try {
 	 
-   client_socket << "\033[1;31m ERROR \033[0m\n";
+   client_socket << currentDateTime() << ":" << "\033[1;31m ERROR (message..) \033[0m\n";
    
    //client_socket >> reply;
 	   }
@@ -58,7 +59,7 @@ void TCP::Warning() {
 
    try {
 	 
-   client_socket << "\033[1;33m WARNING \033[0m\n";
+   client_socket << currentDateTime() << ":" << "\033[1;33m WARNING (message..) \033[0m\n";
    //client_socket >> reply;
 	   }
       
@@ -91,7 +92,7 @@ void TCP::Verbosity() {
 
    try {
 	 
-   client_socket << "\033[1;32m VERBOSITY \033[0m\n";
+   client_socket << currentDateTime() << ":" << "\033[1;32m VERBOSITY (message..) \033[0m\n";
    //client_socket >> reply;
 	   }
       

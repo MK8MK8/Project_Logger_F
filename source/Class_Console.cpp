@@ -5,6 +5,7 @@
 #include <string>
 
 #include "../headers/Class_Console.hpp"
+#include "../headers/CurrentDateTime.hpp"
 
 using namespace std;
 
@@ -12,7 +13,7 @@ using namespace std;
 
 void Console::Error() {
 	
-   cout << "\033[1;31m ERROR: (message..) \033[0m\n ";
+   cout << currentDateTime() << ":" << "\033[1;31m ERROR: (message..) \033[0m\n ";
 
 }
 
@@ -20,7 +21,7 @@ void Console::Error() {
 
 void Console::Warning() {
 	
-   cout << "\033[1;33mWARNING: (message..) \033[0m\n";
+   cout << currentDateTime() << ":" << "\033[1;33mWARNING: (message..) \033[0m\n";
 
 }
 
@@ -28,7 +29,7 @@ void Console::Warning() {
 
 void Console::Verbosity() {
 	
-   cout << "\033[1;32m VERBOSITY: (message..) \033[0m\n";
+   cout << currentDateTime() << ":" << "\033[1;32m VERBOSITY: (message..) \033[0m\n";
 
 }
 
