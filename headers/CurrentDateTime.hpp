@@ -1,5 +1,5 @@
 
-//CurrentDateTime Definition
+//CurrentDateTime function Definition
 
 #ifndef CurrentDateTime_HPP
 #define	CurrentDateTime_HPP
