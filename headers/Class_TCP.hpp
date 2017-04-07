@@ -13,6 +13,8 @@
 
 using namespace std;
 
+// Class child TCP inherited from the base class Log. It contains the three methods of the base class (Error, Warning and Verbosity methods) 
+
 class TCP:public Log {
 
 public:

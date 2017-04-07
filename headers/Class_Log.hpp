@@ -1,3 +1,4 @@
+
 //Class_log Definition
 
 #ifndef CLASS_LOG_HPP
@@ -9,6 +10,8 @@
 using namespace std;
 
 class Log {
+
+// Class Log is the base class wich contains three virtual methods (Error, Warning, and Verbosity methods)
 
 public:
    virtual void Error();

@@ -1,5 +1,5 @@
 
-// Implementation of the Socket class
+// Implementation of the Socket class's methods
 
 #include "string.h"
 #include <string.h>
@@ -9,6 +9,8 @@
 
 #include "../headers/Socket.h"
 
+//Implementation of the Socket's constructor method
+
 
 Socket::Socket() : m_sock ( -1 ) {
 	
@@ -16,10 +18,15 @@ Socket::Socket() : m_sock ( -1 ) {
    
    }
 
+
+//Implementation of the Socket's destructor method
+
 Socket::~Socket() {
   
    if ( is_valid() ) :: close ( m_sock );
    }
+
+//Implementation of the Socket's create method
 
 bool Socket::create() {
 	
@@ -41,6 +48,9 @@ bool Socket::create() {
    return true;
 
 }
+
+
+//Implementation of the Socket's bind method
 
 
 bool Socket::bind ( const int port ) {
@@ -68,6 +78,7 @@ bool Socket::bind ( const int port ) {
    return true;
 }
 
+//Implementation of the Socket's listen method
 
 bool Socket::listen() const {
   
@@ -88,6 +99,7 @@ bool Socket::listen() const {
    return true;
 }
 
+//Implementation of the Socket's accept method
 
 bool Socket::accept ( Socket& new_socket ) const {
 	
@@ -99,6 +111,8 @@ bool Socket::accept ( Socket& new_socket ) const {
    else   
    return true;
 }
+
+//Implementation of the Socket's send method
 
 bool Socket::send ( const std::string s ) const {
 	
@@ -115,6 +129,7 @@ bool Socket::send ( const std::string s ) const {
 
 }
 
+//Implementation of the Socket's recv method
 
 int Socket::recv ( std::string& s ) const {
 	
@@ -145,7 +160,7 @@ int Socket::recv ( std::string& s ) const {
 
 }
 
-
+//Implementation of the Socket's connect method
 
 bool Socket::connect ( const std::string host, const int port ) {
 	
@@ -168,6 +183,8 @@ bool Socket::connect ( const std::string host, const int port ) {
    return false;
 
 }
+
+//Implementation of the Socket's set_non_blocking method
 
 void Socket::set_non_blocking ( const bool b ) {
 	

@@ -1,11 +1,16 @@
 
+// Implementation of the File class's methods
+
 #include <iostream>
 #include <string>
 #include <fstream>
+
 #include "../headers/Class_File.hpp"
 
 
 using namespace std;
+
+//Implementation of the Error method
 
 void File::Error() {
    
@@ -16,6 +21,8 @@ void File::Error() {
 
 }
 
+//Implementation of the Warning method
+
 void File::Warning() {
 	
    ofstream myfile;
@@ -24,6 +31,8 @@ void File::Warning() {
    myfile.close();
 
 }
+
+//Implementation of the Verbosity method
 
 void File::Verbosity() {
 	

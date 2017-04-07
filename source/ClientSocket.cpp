@@ -1,5 +1,5 @@
 
-// Implementation of the ClientSocket class
+// Implementation of the ClientSocket class's methods
 
 #include "../headers/ClientSocket.h"
 #include "../headers/SocketException.h"

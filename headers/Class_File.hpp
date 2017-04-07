@@ -11,6 +11,8 @@
 
 using namespace std;
 
+// Class child File inherited from the base class Log. It contains the three methods of the base class (Error, Warning and Verbosity methods) 
+
 class File:public Log {
 
 public:

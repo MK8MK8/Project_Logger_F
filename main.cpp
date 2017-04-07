@@ -1,4 +1,6 @@
 
+// Main function
+
 #include <iostream>
 #include <string>
 
@@ -11,6 +13,11 @@
 using namespace std;
 
 int main () {
+
+ // X is a class object that may be whether a Console, a File, a Log or a TCP object.
+ // If it is a File object, the error messages will be displayed into a file called Output.txt.
+ // If it is a Console object, the error messages will be displayed in the terminal console. 
+ // If it is a TCP object, the error messages will be displayed in the remote Server terminal.
    
    TCP X;
    

@@ -1,4 +1,6 @@
 
+// Implementation of the TCP class's methods
+
 #include <iostream>
 #include <string>
 
@@ -7,6 +9,8 @@
 #include "../headers/SocketException.h"
 
 using namespace std;
+
+//Implementation of the Error method
 
 void TCP::Error() {
    
@@ -40,6 +44,8 @@ void TCP::Error() {
    
 }
 
+//Implementation of the Warning method
+
 void TCP::Warning() {
   
   //Client Socket Initiation
@@ -71,7 +77,7 @@ void TCP::Warning() {
    
 } 
    
-
+//Implementation of the Verbosity method
 
 void TCP::Verbosity() {
   

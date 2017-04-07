@@ -1,9 +1,10 @@
 
-// Implementation of the ServerSocket class
+// Implementation of the ServerSocket class's methods
 
 #include "../headers/ServerSocket.h"
 #include "../headers/SocketException.h"
 
+//Implementation of the ServerSocket's constructor method
 
 ServerSocket::ServerSocket ( int port ) {
 	
@@ -26,6 +27,8 @@ ServerSocket::ServerSocket ( int port ) {
    }
 
 }
+
+//Implementation of the ServerSocket's destructor method
 
 ServerSocket::~ServerSocket() {
 
@@ -55,6 +58,9 @@ const ServerSocket& ServerSocket::operator >> ( std::string& s ) const {
 
    return *this;
 }
+
+//Implementation of the ServerSocket's accept method
+
 
 void ServerSocket::accept ( ServerSocket& sock ) {
 	
