@@ -1,6 +1,6 @@
 //Class_TCP Definition
 
-#ifndef CLASS_TCPHPP
+#ifndef CLASS_TCP_HPP
 #define	CLASS_TCP_HPP
 
 #include <iostream>
