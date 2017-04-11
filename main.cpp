@@ -19,7 +19,7 @@ int main () {
  // If it is a Console object, the error messages will be displayed in the terminal console. 
  // If it is a TCP object, the error messages will be displayed in the remote Server terminal.
    
-   Console X;
+   TCP X;
    
    /*int a,b;
    cin >> a;
