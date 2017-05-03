@@ -14,7 +14,7 @@ include any scenario. It just display the three message possibilities ( Error, W
 
 So to test this demo, you have to:
  
- 1. Open the main.cpp and choose the nature of the object X (wheter it is a class TCP, class console or class File Object)
+ 1. Open the main.cpp and choose the nature of the object X (whether it is a class TCP, class console or class File Object)
  2. Referring to your choice, the message will be displayed either in the console terminal, in a file called output.txt or in a server terminal
  3. If you choose the TCP object, compile simple_server_main.cpp in the Socket_Server_TCP-example repository to open the server socket
  
